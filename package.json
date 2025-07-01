@@ -12,6 +12,7 @@
     "test:coverage": "vitest --coverage",
     "test:ui": "vitest --ui",
     "e2e": "playwright test",
+        "ci:test": "vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:5173 e2e",
     "e2e:ui": "playwright test --ui",
     "lint": "eslint ./src",
     "lint:fix": "eslint . --ext ts,tsx --fix",
