@@ -20,7 +20,7 @@ describe('SearchFilters', () => {
   it('should render search input and category select', () => {
     render(<SearchFilters {...mockProps} />);
 
-    expect(screen.getByPlaceholderText('Cari thread atau topik...')).toBeInTheDocument();
+    expect(screen.getByPlaceholderText('Tulis sesuatu...')).toBeInTheDocument();
     expect(screen.getByRole('combobox')).toBeInTheDocument();
   });
 
