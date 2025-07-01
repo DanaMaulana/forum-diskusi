@@ -37,7 +37,7 @@ const Register = () => {
           <div className="flex items-center justify-center space-x-2 mb-4">
             <MessageSquare className="h-10 w-10 text-blue-600" />
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Forum Diskusi
+              Forum Diskusii
             </span>
           </div>
           <p className="text-gray-600">Buat akun baru Anda</p>
