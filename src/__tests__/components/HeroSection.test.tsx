@@ -1,3 +1,14 @@
+/** Skenario pengujian komponen HeroSection:
+ *  Skenario 1: Render title dan description
+ *    - Menampilkan "Forum Diskusi" dan deskripsi yang sesuai
+ *  Skenario 2: Menampilkan tombol create thread ketika user login
+ *    - Tombol "Buat Thread Baru" terlihat dan mengarah ke `/create-thread`
+ *  Skenario 3: Menyembunyikan tombol create thread ketika user tidak login
+ *    - Tombol "Buat Thread Baru" tidak terlihat
+ *  Skenario 4: Styling CSS yang benar
+ *    - Title memiliki class gradient yang sesuai
+ */
+
 import React from 'react';
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';

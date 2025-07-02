@@ -1,3 +1,11 @@
+/** Skenario pengujian leaderboardSlice reducer:
+ *  Skenario 1: Handle fetchLeaderboards pending
+ *    - Loading true, error null
+ *  Skenario 2: Handle fetchLeaderboards fulfilled
+ *    - Loading false, leaderboards diupdate dengan data baru
+ *  Skenario 3: Handle fetchLeaderboards rejected
+ *    - Loading false, error diset dengan pesan error
+ */
 
 import { describe, it, expect, vi } from 'vitest';
 import leaderboardReducer, { fetchLeaderboards } from '@/store/slices/leaderboardSlice';

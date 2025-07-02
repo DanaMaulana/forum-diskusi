@@ -1,3 +1,9 @@
+/** Skenario pengujian leaderboard thunks:
+ *  Skenario 1: Fetch leaderboards berhasil
+ *    - Mock API getLeaderboards, verifikasi data leaderboards
+ *  Skenario 2: Handle fetchLeaderboards error
+ *    - Mock API error, verifikasi error handling
+ */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { configureStore } from '@reduxjs/toolkit';

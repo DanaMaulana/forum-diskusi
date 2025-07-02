@@ -1,3 +1,9 @@
+/** Skenario pengujian users thunks:
+ *  Skenario 1: Fetch users berhasil
+ *    - Mock API getUsers, verifikasi data users
+ *  Skenario 2: Handle fetchUsers error
+ *    - Mock API error, verifikasi error handling
+ */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { configureStore } from '@reduxjs/toolkit';

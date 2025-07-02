@@ -1,3 +1,13 @@
+/** Skenario pengujian alur pembuatan thread:
+*   Skenario 1: Redirect ke login ketika tidak terotentikasi
+*     - Pengguna mengakses `/create-thread` tanpa login
+*     - Sistem mengarahkan ke halaman `/login`
+*   Skenario 2: Menampilkan form pembuatan thread ketika terotentikasi
+*     - Mock API untuk `v1/users/me` dengan data user valid
+*     - Set token di localStorage
+*     - Navigasi ke halaman create-thread berhasil
+*/
+
 import { test, expect } from '@playwright/test';
 
 test.describe('Create Thread Flow', () => {

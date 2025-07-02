@@ -1,3 +1,17 @@
+/** Skenario pengujian alur login:
+*   Skenario 1: Menampilkan halaman login dengan benar
+*     - Form login memiliki input email, password, dan tombol submit
+*   Skenario 2: Validasi error untuk field kosong
+*     - HTML5 validation mencegah submit form kosong
+*   Skenario 3: Navigasi ke halaman register dari login
+*     - Link "Daftar disini" mengarahkan ke `/register`
+*   Skenario 4: Menampilkan elemen form login
+*     - Label dan placeholder sesuai untuk input email dan password
+*   Skenario 5: Menangani percobaan login dengan mock credentials
+*     - Mock API dengan delay untuk menangkap loading state
+*     - Menampilkan tombol "Logging in..." saat proses login
+*/
+
 import { test, expect } from '@playwright/test';
 
 test.describe('Login Flow', () => {

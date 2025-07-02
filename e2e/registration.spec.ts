@@ -1,3 +1,11 @@
+/** Skenario pengujian alur registrasi:
+*   Skenario 1: Menampilkan form registrasi dengan benar
+*     - Form memiliki input nama, email, password, dan tombol submit
+*   Skenario 2: Navigasi ke halaman login dari registrasi
+*     - Link "Login disini" mengarahkan ke `/login`
+*   Skenario 3: Validasi field yang wajib diisi
+*     - Submit form kosong memicu HTML5 validation
+*/
 
 import { test, expect } from '@playwright/test';
 

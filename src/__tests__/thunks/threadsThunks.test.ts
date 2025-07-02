@@ -1,3 +1,15 @@
+/** Skenario pengujian threads thunks:
+ *  Skenario 1: Fetch threads berhasil
+ *    - Mock API getThreads, verifikasi data threads
+ *  Skenario 2: Handle fetchThreads error
+ *    - Mock API error, verifikasi error handling
+ *  Skenario 3: Fetch thread detail berhasil
+ *    - Mock API getThreadDetail dengan ID, verifikasi thread data
+ *  Skenario 4: Create new thread berhasil
+ *    - Mock API createThread, verifikasi thread creation dengan parameter
+ *  Skenario 5-7: Vote thread (upvote, downvote, neutralize)
+ *    - Mock API calls untuk berbagai jenis voting, verifikasi API calls
+ */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { configureStore } from '@reduxjs/toolkit';

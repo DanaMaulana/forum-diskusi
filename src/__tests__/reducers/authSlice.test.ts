@@ -1,4 +1,18 @@
 /* eslint-disable linebreak-style */
+
+/** Skenario pengujian authSlice reducer:
+ *  Skenario 1: Handle logout action
+ *    - State user menjadi null, error dihapus
+ *  Skenario 2: Handle clearError action
+ *    - Error state menjadi null
+ *  Skenario 3: Handle loginUser pending
+ *    - Loading true, error null
+ *  Skenario 4: Handle loginUser fulfilled
+ *    - Loading false, user diset, error null
+ *  Skenario 5: Handle registerUser rejected
+ *    - Loading false, error diset dengan pesan error
+ */
+
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import authReducer, {
   loginUser,

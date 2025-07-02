@@ -1,3 +1,16 @@
+/** Skenario pengujian komponen ThreadsList:
+ *  Skenario 1: Render threads ketika disediakan
+ *    - Menampilkan daftar thread dan jumlah thread yang ditemukan
+ *  Skenario 2: Menampilkan empty state ketika tidak ada threads
+ *    - Pesan "Tidak ada thread yang ditemukan" dan "0 thread ditemukan"
+ *  Skenario 3: Menampilkan title yang benar untuk semua threads
+ *    - Title "Semua Thread" untuk kategori "all"
+ *  Skenario 4: Menampilkan title yang benar untuk kategori spesifik
+ *    - Title "Thread #javascript" untuk kategori "javascript"
+ *  Skenario 5: Render jumlah thread cards yang benar
+ *    - Jumlah thread card sesuai dengan data yang diberikan
+ */
+
 import React from 'react';
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';

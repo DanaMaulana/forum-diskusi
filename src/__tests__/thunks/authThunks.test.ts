@@ -1,3 +1,13 @@
+/** Skenario pengujian auth thunks:
+ *  Skenario 1: Login user berhasil
+ *    - Mock API login dan getOwnProfile, verifikasi payload dan API calls
+ *  Skenario 2: Handle login error
+ *    - Mock API error, verifikasi error handling
+ *  Skenario 3: Register user berhasil
+ *    - Mock API register, verifikasi API call dengan parameter yang benar
+ *  Skenario 4: Get current user berhasil
+ *    - Mock API getOwnProfile, verifikasi user data
+ */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { configureStore } from '@reduxjs/toolkit';

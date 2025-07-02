@@ -1,3 +1,16 @@
+/** Skenario pengujian komponen Navbar:
+ *  Skenario 1: Render dengan benar ketika user tidak login
+ *    - Link Home, Leaderboard, Login, Register tersedia
+ *  Skenario 2: Render dengan benar ketika user login
+ *    - Menampilkan nama user, menyembunyikan Login/Register
+ *  Skenario 3: Memanggil onLogout ketika tombol logout diklik
+ *    - Callback onLogout terpanggil saat klik tombol logout
+ *  Skenario 4: Link navigasi yang benar
+ *    - Semua link memiliki href yang sesuai
+ *  Skenario 5: Menampilkan link profil user ketika login
+ *    - Link profil user mengarah ke `/profile`
+ */
+
 import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';

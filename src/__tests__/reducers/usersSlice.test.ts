@@ -1,3 +1,11 @@
+/** Skenario pengujian usersSlice reducer:
+ *  Skenario 1: Handle fetchUsers pending
+ *    - Loading true, error null
+ *  Skenario 2: Handle fetchUsers fulfilled
+ *    - Loading false, users diupdate dengan data baru
+ *  Skenario 3: Handle fetchUsers rejected
+ *    - Loading false, error diset dengan pesan error
+ */
 
 import { describe, it, expect, vi } from 'vitest';
 import usersReducer, { fetchUsers } from '@/store/slices/usersSlice';

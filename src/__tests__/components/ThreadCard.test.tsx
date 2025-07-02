@@ -1,3 +1,16 @@
+/** Skenario pengujian komponen ThreadCard:
+ *  Skenario 1: Render informasi thread dengan benar
+ *    - Title, username, category, upvotes, dan comments count ditampilkan
+ *  Skenario 2: Memotong teks body yang panjang
+ *    - Body teks panjang dipotong dengan ellipsis
+ *  Skenario 3: Link navigasi yang benar
+ *    - Link title dan "Read more" mengarah ke `/thread/id`
+ *  Skenario 4: Menampilkan fallback avatar ketika tidak ada avatar
+ *    - Icon User sebagai fallback avatar
+ *  Skenario 5: Format tanggal pembuatan dengan benar
+ *    - Menampilkan waktu relatif dengan "ago"
+ */
+
 import React from 'react';
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';

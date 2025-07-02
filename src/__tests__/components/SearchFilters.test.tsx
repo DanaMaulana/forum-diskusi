@@ -1,4 +1,18 @@
 /* eslint-disable linebreak-style */
+
+/** Skenario pengujian komponen SearchFilters:
+ * Skenario 1: Render input search dan category select
+ *  - Input placeholder "Cari thread atau topik..." dan combobox tersedia
+ * Skenario 2: Memanggil setSearchTerm ketika mengetik
+ *  - Event change pada input memicu callback dengan nilai yang benar
+ * Skenario 3: Menampilkan term pencarian saat ini
+ *  - Input menampilkan nilai searchTerm yang diberikan
+ * Skenario 4: Render category select dengan benar
+ *  - Select trigger terlihat dan berfungsi
+ * Skenario 5: Menangani array categories kosong
+ *  - Komponen tetap render meski categories kosong
+ */
+
 import React from 'react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';

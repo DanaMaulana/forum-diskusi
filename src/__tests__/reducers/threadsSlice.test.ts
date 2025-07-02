@@ -1,3 +1,15 @@
+/** Skenario pengujian threadsSlice reducer:
+ *  Skenario 1: Handle clearCurrentThread action
+ *    - currentThread menjadi null
+ *  Skenario 2: Handle fetchThreads pending
+ *    - Loading true, error null
+ *  Skenario 3: Handle fetchThreads fulfilled
+ *    - Loading false, threads diupdate dengan data baru
+ *  Skenario 4: Handle fetchThreads rejected
+ *    - Loading false, error diset dengan pesan error
+ *  Skenario 5: Handle createNewThread fulfilled
+ *    - Thread baru ditambahkan ke array threads
+ */
 
 import { describe, it, expect, vi } from 'vitest';
 import threadsReducer, {
