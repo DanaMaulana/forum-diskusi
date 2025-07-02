@@ -1,4 +1,4 @@
-
+/* eslint-disable linebreak-style */
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import authReducer, {
   loginUser,
